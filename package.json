@@ -1,16 +1,24 @@
 {
-  "name": "pokemon-app",
+  "name": "pokemon-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple API that displays all Pokemon and some information about them such as moves and region found etc",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisruocco/Pokemon-API.git"
+  },
   "author": "Louis Ruocco",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/louisruocco/Pokemon-API/issues"
+  },
+  "homepage": "https://github.com/louisruocco/Pokemon-API#readme",
   "dependencies": {
     "connect-flash": "^0.1.1",
-    "dotenv": "^14.2.0",
+    "dotenv": "^14.3.2",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "mysql": "^2.18.1",
