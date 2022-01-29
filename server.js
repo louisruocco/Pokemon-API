@@ -14,3 +14,4 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.set("view engine", "ejs");
 app.use(flash());
+app.use("/", require("./routes/pages"));
