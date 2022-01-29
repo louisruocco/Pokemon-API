@@ -14,5 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.set("view engine", "ejs");
 app.use(flash());
+app.use(express.static("public"));
+app.use("/css", express.static(__dirname + "public/css"));
+app.use("/js", express.static(__dirname + "public/js"));
 app.use("/", require("./routes/pages"));
 app.use("/auth", require("./routes/auth"));
