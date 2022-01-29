@@ -6,7 +6,11 @@ router.get("/", (req, res) => {
 })
 
 router.get("/pokemon", (req, res) => {
-    res.render("home");
+    res.send("pokemon JSON")
+})
+
+router.get("/add", (req, res) => {
+    res.render("add")
 })
 
 module.exports = router;
