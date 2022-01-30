@@ -21,7 +21,7 @@
     position: absolute;
 }
 
-.pokemon {
+.pokemon, .info {
     display: flex;
     flex-direction: column;
     height: 50%;
@@ -34,4 +34,14 @@
 
 .pokemon a {
     margin: 7px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info div {
+    text-align: center;
+    margin: 10px;
 }

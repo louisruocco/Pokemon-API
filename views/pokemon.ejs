@@ -8,8 +8,21 @@
     <title><%= pokemon[0].name %></title>
 </head>
 <body>
+    <div class="link">
+        <a href="/">Back to Pokedex</a>
+    </div>
     <div class="title">
         <h1><%= pokemon[0].name %></h1>
+    </div>
+    <div class="info">
+        <div class="type">
+            <h3>Type:</h3>
+            <p><%= pokemon[0].type %></p>
+        </div>
+        <div class="area">
+            <h3>Area Found:</h3>
+            <p><%= pokemon[0].area %></p>
+        </div>
     </div>
 </body>
 </html>
