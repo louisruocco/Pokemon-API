@@ -26,4 +26,14 @@ router.get("/add", (req, res) => {
     res.render("add")
 })
 
+router.get("/pokedex/:name", (req, res) => {
+    db.query("SELECT * FROM pokemon WHERE name = ?", [req.params.name], (err, pokemon) => {
+        if(err){
+            return console.error(err);
+        } else {
+            res.render("pokemon", {pokemon});
+        }
+    })
+})
+
 module.exports = router;

@@ -22,7 +22,7 @@
     </div>
    <div class="pokemon">
         <% pokemon.forEach(name => { %>
-            <a href=""><%= name.name %></a>
+            <a href="/pokedex/<%= name.name %>"><%= name.name %></a>
         <% }) %>
    </div>
 </body>
