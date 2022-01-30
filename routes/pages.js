@@ -3,7 +3,13 @@ const db = require("../db");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    res.render("home");
+    db.query("SELECT name FROM pokemon", (err, pokemon) => {
+        if(err){
+            return console.error(err);
+        } else {
+            res.render("home", {pokemon});
+        }
+    })
 })
 
 router.get("/pokemon", (req, res) => {

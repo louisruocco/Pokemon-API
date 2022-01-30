@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    display: flex;
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.search-section {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 20px;
+}
+
+.pokemon a {
+    margin: 7px;
+}
