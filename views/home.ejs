@@ -14,12 +14,6 @@
     <div class="add">
         <a href="/add">Add Pokemon</a>
     </div>
-    <div class="search-section">
-        <form action="">
-            <input type="text" name = "pokemon" placeholder = "Search for a Pokemon..." required>
-            <button>Search</button>
-        </form>
-    </div>
    <div class="pokemon">
         <% pokemon.forEach(name => { %>
             <a href="/pokedex/<%= name.name %>"><%= name.name %></a>
