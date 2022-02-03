@@ -36,4 +36,8 @@ router.get("/pokedex/:name", (req, res) => {
     })
 })
 
+router.get("/pokedex/api/docs", (req, res) => {
+    res.render("docs");
+})
+
 module.exports = router;
