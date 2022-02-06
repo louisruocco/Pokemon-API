@@ -7,7 +7,7 @@ const app = express();
 dotenv.config({path: "./.env"});
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log("Listening at " + port));
+app.listen(port, () => console.log(`Listening at ${port}`));
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
