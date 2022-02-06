@@ -22,12 +22,8 @@ router.get("/pokemon", (req, res) => {
     })
 })
 
-router.get("/add", (req, res) => {
-<<<<<<< HEAD
+router.get("/add", (req, res) => {    
     res.render("add");
-=======
-    res.render("add")
->>>>>>> 9433a1c2ff4f326f00c0dbaabab56542b2ec5caa
 })
 
 router.get("/pokedex/:name", (req, res) => {
